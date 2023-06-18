@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "242eaa0f-8b27-4767-bcee-aab8779df827",
+		"name": "migros-one",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5756102"
+	},
+	"item": [
+		{
+			"name": "track-courier-1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"time\": \"2023-06-16T21:11:40\",\r\n    \"courier\": \"1\",\r\n    \"lat\": 40.99239856979836,\r\n    \"lng\": 29.124478104294173\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tracking/couriers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracking",
+						"couriers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "track-courier-2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"time\": \"2023-06-16T21:12:40\",\r\n    \"courier\": \"1\",\r\n    \"lat\": 40.99223957857343,\r\n    \"lng\": 29.12458975431209\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tracking/couriers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracking",
+						"couriers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "track-courier-3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"time\": \"2023-06-16T21:13:40\",\r\n    \"courier\": \"1\",\r\n    \"lat\": 40.99238670275644,\r\n    \"lng\": 29.124350675573512\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tracking/couriers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracking",
+						"couriers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "total-distance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/tracking/couriers/1/distance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tracking",
+						"couriers",
+						"1",
+						"distance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
